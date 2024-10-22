@@ -1,0 +1,19 @@
+<?php
+$cars = array(
+    "Toyota" => 20000,
+    "Honda" => 18000,
+    "Ford" => 22000,
+    "Chevrolet" => 21000,
+    "Nissan" => 19000
+);
+
+print_r($cars);
+
+$cars["BMW"] = 35000;
+$cars["Mercedes"] = 40000;
+
+array_push($cars, $cars["BMW"], $cars["Mercedes"]);
+asort($cars);
+
+print_r($cars);
+?>
